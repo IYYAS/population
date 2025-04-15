@@ -26,12 +26,12 @@ class Cubitpage extends StatelessWidget {
                     itemCount: state.data.data.length,
                     itemBuilder: (context, index) {
                       return ListTile(
-                        title: Text("${state.data.data.first.nation}"),
-                        subtitle: Text("${state.data.data.first.population}"),
+                        title: Text("${state.data.data[index].nation}"),
+                        subtitle: Text("${state.data.data[index].population}"),
                         leading: CircleAvatar(
                           backgroundColor: Colors.purpleAccent,
 
-                          child: Text(state.data.data.first.year),
+                          child: Text(state.data.data[index].year),
                         ),
                       );
                   
